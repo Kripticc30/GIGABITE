@@ -5,7 +5,7 @@ const isLocalDevelopment = ['localhost', '127.0.0.1'].includes(
 );
 const API_BASE_URL = isLocalDevelopment
   ? 'http://localhost:5000'
-  : 'https://sad-web-db.onrender.com';
+  : 'https://gigabite-bjld.onrender.com';
 
 export function apiUrl(endpoint) {
   return endpoint.startsWith('http')

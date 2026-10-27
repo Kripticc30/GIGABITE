@@ -4,7 +4,7 @@
 
 | Environment | Base URL | API Base URL |
 | :--- | :--- | :--- |
-| **Production Backend** | `https://sad-web-db.onrender.com` | `https://sad-web-db.onrender.com/api` |
+| **Production Backend** | `https://gigabite-bjld.onrender.com` | `https://gigabite-bjld.onrender.com/api` |
 | **Local Development** | `http://localhost:5000` | `http://localhost:5000/api` |
 | **Production Frontend** | `https://sad-web-db-frontend.vercel.app` | — |
 
