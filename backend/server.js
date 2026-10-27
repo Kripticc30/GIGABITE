@@ -6,6 +6,7 @@ const {
   PORT,
   DATABASE_URL,
   CORS_ORIGINS,
+  FRONTEND_URL,
   NODE_ENV,
 } = require('./src/config/env');
 
@@ -49,7 +50,7 @@ const normalizeOrigin = (value) => {
   }
 };
 
-const allowedOrigins = new Set(CORS_ORIGINS);
+const allowedOrigins = new Set([...CORS_ORIGINS, FRONTEND_URL]);
 
 // Middleware
 app.use(

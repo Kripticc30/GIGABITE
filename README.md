@@ -75,12 +75,12 @@ Copy `backend/.env.example` to `backend/.env`, then fill in the database connect
 ```dotenv
 DATABASE_URL=postgresql://admin:admin123@localhost:5432/francis
 JWT_SECRET=your_long_random_secret_here
-CORS_ORIGINS=http://localhost:5000,http://127.0.0.1:5000
+CORS_ORIGINS=https://gigabite-frontend.vercel.app,http://localhost:5000,http://127.0.0.1:5000
 ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD=YourAdminPassword
 BREVO_API_KEY=your_brevo_api_key
 BREVO_SENDER_EMAIL=verified-sender@example.com
-FRONTEND_URL=https://your-frontend-domain.example
+FRONTEND_URL=https://gigabite-frontend.vercel.app
 ```
 
 > **Prerequisites**: PostgreSQL must be installed and running locally. The database (`francis`) and the database user must exist before running the seeder. The backend creates all tables automatically in a dedicated `app` schema on first seed.
